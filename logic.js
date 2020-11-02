@@ -7,8 +7,14 @@ let userClickedSquares = [];
 for(let n = 0; n <= 8; n++){
   inputSquares[n].addEventListener('click', () => {
     userClickedSquares.push(n);
+    inputSquares[n].classList.add('pressed');
+    setTimeout( () => {
+      inputSquares[n].classList.remove('pressed');
+    }, 200);
     // console.log(n);
-    verifyUserInput(numberArray, userClickedSquares);
+    setTimeout( () => {
+      verifyUserInput(numberArray, userClickedSquares);
+    }, 400);
   });
 };
 
