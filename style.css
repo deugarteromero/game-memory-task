@@ -41,7 +41,12 @@ main {
 .viewSquare {
   height: 50px;
   width: 50px;
-  border: 1px solid orange;
+  background-color: transparent;
+
+  /* border: 1px solid orange; */
+}
+.active {
+  background-color: rgb(68, 168, 254);
 }
 
 #memoryGameInput {
