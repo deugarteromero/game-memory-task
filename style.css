@@ -7,5 +7,54 @@
 }
 
 body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
   background-color: #333333;
+}
+
+main {
+  display: flex;
+}
+
+.mainBox {
+  height: 300px;
+  width: 300px;
+  margin-left: 10px;
+  background-color: rgb(162, 162, 162);
+  border: 6px solid black;
+  border-radius: 4px;
+
+  display: flex;
+}
+
+#memoryGameView {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: auto;
+  background-color: black;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 4px;
+}
+.viewSquare {
+  height: 50px;
+  width: 50px;
+  border: 1px solid orange;
+}
+
+#memoryGameInput {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: auto;
+  background-color: black;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 4px;
+}
+.inputSquare {
+  height: 50px;
+  width: 50px;
+  border: 1px solid red;
 }
