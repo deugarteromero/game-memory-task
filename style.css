@@ -22,7 +22,7 @@ main {
   height: 300px;
   width: 300px;
   margin-left: 10px;
-  background-color: rgb(162, 162, 162);
+  background-color: rgb(164, 164, 164);
   border: 6px solid black;
   border-radius: 4px;
 
@@ -33,6 +33,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
+  padding: 4px;
   margin: auto;
   background-color: black;
   border: 2px solid rgb(75, 75, 75);
@@ -42,8 +43,7 @@ main {
   height: 50px;
   width: 50px;
   background-color: transparent;
-
-  /* border: 1px solid orange; */
+  border-radius: 1px;
 }
 .active {
   background-color: rgb(68, 168, 254);
@@ -62,4 +62,7 @@ main {
   height: 50px;
   width: 50px;
   border: 1px solid red;
+}
+.pass {
+  background-color: rgb(56, 136, 209);
 }
