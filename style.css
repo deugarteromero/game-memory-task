@@ -29,6 +29,9 @@ main {
   border-radius: 4px;
 
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #memoryGameView {
@@ -36,7 +39,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
 
   padding: 4px;
-  margin: auto;
+  /* margin: auto; */
   background-color: black;
   border: 2px solid rgb(75, 75, 75);
   border-radius: 4px;
@@ -66,7 +69,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  margin: auto;
+  /* margin: 0 auto; */
   /* background-color: black; */
   /* border: 2px solid rgb(75, 75, 75); */
   border-radius: 4px;
@@ -87,6 +90,24 @@ main {
   background-color: rgb(56, 136, 209);
 }
 
+/* Light Status */
+/*--------------*/
+.lightStatusContainer {
+  display: flex;
+}
+.lightStatus {
+  margin: 0 .55rem;
+  height: 1.30rem;
+  width: 1.30rem;
+  border: 3px solid rgb(30, 30, 30);
+  border-radius: 50%;
+}
+.activeLight {
+  background-color: rgb(0, 190, 0);
+}
+
+/* Animations*/
+/*-----------*/
 @keyframes slideDown {
   0% {
     transform: translate(0, 0);

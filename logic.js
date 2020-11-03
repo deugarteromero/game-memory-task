@@ -1,6 +1,7 @@
 //Selection
 let viewSquares = document.querySelectorAll('.viewSquare');
 let inputSquares = document.querySelectorAll('.inputSquare');
+let lightStatusCircles = document.querySelectorAll('.lightStatus');
 
 //Manipulation
 function random(){
@@ -26,7 +27,7 @@ let numberArray = [];
 function animateSquares(){
   let nextNumber = random();
   numberArray.push(nextNumber);
-  console.log(numberArray);
+  // console.log(numberArray);
 
   if(numberArray.length >= 1){
     setTimeout( () => {
@@ -92,6 +93,9 @@ function verifyUserInput(numArr, userArr) {
         }, 300);
       });
     } else {
+      setTimeout( () => {
+        lightStatusCircles[numArr.length - 1].classList.add('activeLight');
+      }, 200);
       userClickedSquares = [];
       animateSquares();
     };
