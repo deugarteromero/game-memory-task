@@ -40,6 +40,17 @@ main {
   background-color: black;
   border: 2px solid rgb(75, 75, 75);
   border-radius: 4px;
+
+  position: relative;
+}
+#memoryGameView::after {
+  content: "";
+  position: absolute;
+  transform: translate(-6px, -6px);
+  height: 164px;
+  width: 164px;
+  border: 3px solid rgb(214, 214, 214);
+  border-radius: 4px;
 }
 .viewSquare {
   height: 50px;
@@ -65,7 +76,7 @@ main {
   width: 50px;
   margin: 2px;
   background-color: rgb(115, 115, 115);
-  border: 1px solid rgb(30, 30, 30);
+  border: 3px solid rgb(30, 30, 30);
   border-radius: 4px;
   cursor: pointer;
 }
