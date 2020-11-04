@@ -113,4 +113,4 @@ function verifyUserInput(numArr, userArr) {
 };
 
 animateSquares();
-// console.log(inputSquares);
+
