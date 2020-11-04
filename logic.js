@@ -93,6 +93,9 @@ function verifyUserInput(numArr, userArr) {
         setTimeout( () => {
           element.classList.remove('pass');
         }, 300);
+        // setTimeout( () => {
+
+        // }, 500);
       });
     } else {
       setTimeout( () => {

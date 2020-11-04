@@ -12,6 +12,7 @@ body {
   place-content: center;
 
   background-color: #333333;
+  font-family: sans-serif;
 }
 
 main {
@@ -106,6 +107,19 @@ main {
   background-color: rgb(0, 190, 0);
 }
 
+/* Text PopUp */
+/*------------*/
+#popupText {
+  position: absolute;
+  transform: translate(0, calc(90vh));
+  animation: textSlideUp 300ms linear forwards;
+
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
 /* Animations*/
 /*-----------*/
 @keyframes slideDown {
@@ -114,6 +128,12 @@ main {
   }
   100% {
     transform: translate(-200, 0);
+  }
+}
+
+@keyframes textSlideUp {
+  100% {
+    transform: translate(0, calc(100vh / 2));
   }
 }
 
