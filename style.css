@@ -116,3 +116,9 @@ main {
     transform: translate(-200, 0);
   }
 }
+
+/* Misc */
+/*------*/
+.noDisplay {
+  display: none;
+}
