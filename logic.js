@@ -3,6 +3,7 @@ let viewSquares = document.querySelectorAll('.viewSquare');
 let inputSquares = document.querySelectorAll('.inputSquare');
 let lightStatusCircles = document.querySelectorAll('.lightStatus');
 let lightStatusIndicators = document.querySelectorAll('[data-el="lightIndicator"]');
+let popupText = document.getElementById('popupText');
 
 //Manipulation
 function random(){
@@ -93,9 +94,9 @@ function verifyUserInput(numArr, userArr) {
         setTimeout( () => {
           element.classList.remove('pass');
         }, 300);
-        // setTimeout( () => {
-
-        // }, 500);
+        setTimeout( () => {
+          popupText.classList.remove('noDisplay');
+        }, 600);
       });
     } else {
       setTimeout( () => {

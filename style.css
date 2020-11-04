@@ -112,12 +112,13 @@ main {
 #popupText {
   position: absolute;
   transform: translate(0, calc(90vh));
-  animation: textSlideUp 300ms linear forwards;
+  animation: textSlideUp 200ms linear forwards;
 
   font-size: 2rem;
   width: 100%;
   text-align: center;
   color: white;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 /* Animations*/
